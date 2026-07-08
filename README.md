@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Multicart — Sitio web (Next.js)
 
-## Getting Started
+Porteo del sitio [multicart.mx](https://multicart.mx) (antes WordPress + Elementor) a **Next.js 15** (App Router, 100% estático), listo para **Vercel**.
 
-First, run the development server:
+Multicart es una empresa de renta y venta de multifuncionales, consumibles y servicio técnico en Guadalajara.
+
+## Stack
+
+- **Next.js 15** (App Router) · **React 19** · **TypeScript** (strict)
+- **Tailwind CSS v4** (tokens de color y tipografía en `app/globals.css`)
+- **Generación estática (SSG)** — sin base de datos
+- **Plunk** para el email del formulario de contacto
+- Deploy en **Vercel**
+
+## Desarrollo local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # build de producción (genera las páginas estáticas)
+npm run start    # sirve el build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+app/                     Rutas (App Router). Cada página lee su JSON y lo renderiza.
+  page.tsx                 Home (/)
+  nosotros/                /nosotros
+  servicios/               /servicios + [slug] (3 servicios + 3 landings de ciudad)
+  fortinet-para-pymes/     /fortinet-para-pymes
+  contacto/                /contacto
+  politica-de-privacidad/  /politica-de-privacidad
+  sitemap.ts, robots.ts    SEO
+content/                 CONTENIDO DEL SITIO (aquí se edita el texto)
+  site.json                Datos globales: nav, footer, teléfono, WhatsApp, dirección, redes
+  home.json, nosotros.json, servicios.json, contacto.json, ...
+  servicios/*.json         Páginas de servicio y landings de ciudad
+components/              UI: layout (Header/Footer/WhatsAppFloat), bloques y SectionRenderer
+lib/                    types.ts (esquema de contenido), content.ts, seo.ts, plunk.ts, sanitize.ts
+actions/                send-contact.ts (Server Action → Plunk)
+public/images/          Imágenes optimizadas
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Poppins and Archivo.
+## Editar contenido
 
-## Learn More
+El contenido vive en archivos **JSON** en `content/`. Cada página es `{ seo, sections: [] }`, donde
+cada `section` es un **bloque** (`hero`, `servicesGrid`, `imageText`, `featureList`, `testimonials`,
+`videoGallery`, `brandStrip`, `cta`, `contact`, `richText`). Los tipos están en `lib/types.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+- Cambiar textos/CTAs → editar el JSON de la página.
+- Datos globales (teléfono, WhatsApp, dirección, redes, nav, footer) → `content/site.json`.
+- Agregar una imagen → colócala en `public/images/` y referénciala como `/images/<archivo>` en el JSON.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tras editar, `npm run build` valida y regenera. En Vercel basta con hacer push a `main`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Variables de entorno
 
-## Deploy on Vercel
+| Variable | Descripción |
+|----------|-------------|
+| `PLUNK_API_KEY` | API key de Plunk para enviar el email del formulario de contacto a `contacto@multicart.mx`. |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Local: crea `.env.local` con `PLUNK_API_KEY=sk_...` (ver `.env.example`). **Nunca** se commitea.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy en Vercel
+
+El proyecto está pensado para Vercel (framework autodetectado: Next.js).
+
+1. Conectar el repo de GitHub a Vercel (o `vercel` / `vercel --prod` con el CLI).
+2. En **Settings → Environment Variables** agregar `PLUNK_API_KEY` (Production + Preview).
+3. Cada push a `main` dispara un deploy.
+
+> **DNS / dominio:** apuntar `multicart.mx` a Vercel es un paso posterior que se coordina aparte
+> (fuera del alcance de este porteo). Mientras tanto el sitio vive en la URL `*.vercel.app`.
+
+## Notas del porteo
+
+Se corrigieron algunos errores del sitio origen ("limpieza"): email unificado a
+`contacto@multicart.mx`, typo "Luenes"→"Lunes", badge de Tepatitlán "Colima"→"Jalisco",
+y números de WhatsApp por ciudad en las landings. El diseño replica el sitio original.
