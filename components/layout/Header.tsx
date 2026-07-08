@@ -95,6 +95,16 @@ function ServicesDropdown({
           open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
         }`}
       >
+        <li role="none">
+          <Link
+            href={item.href}
+            role="menuitem"
+            className="block px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-surface focus-visible:bg-surface focus-visible:outline-none"
+            onClick={onClose}
+          >
+            Ver todos los servicios
+          </Link>
+        </li>
         {item.children?.map((child) => (
           <li key={child.href} role="none">
             <Link
@@ -214,6 +224,15 @@ export default function Header({ site }: { site: SiteData }) {
                   hidden={!mobileServiciosOpen}
                   className="ml-3 flex flex-col gap-1 border-l border-navy/10 pb-2 pl-4"
                 >
+                  <li>
+                    <Link
+                      href={item.href}
+                      className="block rounded py-2 text-sm font-semibold text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      Ver todos los servicios
+                    </Link>
+                  </li>
                   {item.children.map((child) => (
                     <li key={child.href}>
                       <Link
