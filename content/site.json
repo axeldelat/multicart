@@ -1,0 +1,34 @@
+{
+  "name": "Multicart",
+  "phone": "33 2191 0090",
+  "phoneHref": "tel:+523321910090",
+  "whatsapp": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+  "email": "contacto@multicart.mx",
+  "address": "Francisco Zarco 2324, Col. Ladrón de Guevara, Guadalajara, Jal. C.P. 44600",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Nosotros", "href": "/nosotros" },
+    { "label": "Servicios", "href": "/servicios", "children": [
+      { "label": "Renta y venta de multifuncionales", "href": "/servicios/renta-y-venta-de-multifuncionales" },
+      { "label": "Venta de consumibles", "href": "/servicios/venta-de-consumibles" },
+      { "label": "Servicio técnico", "href": "/servicios/servicio-tecnico" }
+    ]},
+    { "label": "Contacto", "href": "/contacto" }
+  ],
+  "footer": {
+    "tagline": "Renta y Venta de Equipos de Impresión y Consumibles",
+    "columns": [
+      { "heading": "Servicios", "links": [
+        { "label": "Renta y venta de multifuncionales", "href": "/servicios/renta-y-venta-de-multifuncionales" },
+        { "label": "Venta de consumibles", "href": "/servicios/venta-de-consumibles" },
+        { "label": "Servicio técnico", "href": "/servicios/servicio-tecnico" }
+      ]}
+    ],
+    "legalLinks": [ { "label": "Política de privacidad", "href": "/politica-de-privacidad" } ]
+  },
+  "social": [
+    { "platform": "facebook", "href": "https://www.facebook.com/RentayMantenimientoDeCopiadoras" },
+    { "platform": "whatsapp", "href": "https://wa.me/5213321910090" },
+    { "platform": "youtube", "href": "https://www.youtube.com/@Multicart-bw1rk" }
+  ]
+}
