@@ -44,7 +44,7 @@ function escapeAttr(value: string): string {
 function sanitizeAnchorAttrs(attrs: string): string {
   const hrefMatch = attrs.match(/\bhref\s*=\s*("([^"]*)"|'([^']*)')/i);
   const rawHref = (hrefMatch ? hrefMatch[2] ?? hrefMatch[3] ?? "" : "").trim();
-  const isSafe = /^(https?:|mailto:|tel:|\/)/i.test(rawHref);
+  const isSafe = /^(https?:|mailto:|tel:)/i.test(rawHref) || /^\/(?!\/)/.test(rawHref);
   const safeHref = isSafe ? rawHref : "#";
   const isExternal = /^https?:/i.test(safeHref);
 
