@@ -1,0 +1,39 @@
+{
+  "seo": {
+    "title": "Nosotros - Multicart",
+    "description": "Con más de 7 años, ofrecemos soluciones de impresión láser con calidad y atención personalizada.",
+    "canonical": "/nosotros",
+    "ogImage": "/images/carousel-5.png"
+  },
+  "sections": [
+    {
+      "type": "richText",
+      "heading": "¿Quiénes somos nosotros?",
+      "html": "<p>Con más de 7 años en el mercado, somos una marca registrada especializada en soluciones integrales de impresión y copiado láser.</p><p>Nuestro equipo de ingenieros y técnicos altamente cualificados garantiza respuestas efectivas a todas sus necesidades de impresión, escaneo y copiado.</p><p>Nos distinguimos como líderes en atención al cliente gracias a nuestra filosofía centrada en tres pilares fundamentales: calidad superior, trato personalizado y eficiencia comprobada. Trabajamos con las marcas más prestigiosas del mercado para asegurar el servicio excepcional que usted merece</p>",
+      "background": "white"
+    },
+    {
+      "type": "brandStrip",
+      "heading": "Nos Respaldan Grandes Marcas Solo las mejores marcas y soluciones para garantizar la calidad de nuestro servicio.",
+      "logos": [
+        { "src": "/images/carousel-5.png", "alt": "" },
+        { "src": "/images/carousel-4.png", "alt": "" },
+        { "src": "/images/carousel-3.png", "alt": "" },
+        { "src": "/images/carousel-2.png", "alt": "" },
+        { "src": "/images/carousel-1.png", "alt": "" },
+        { "src": "/images/carousel-8.png", "alt": "" },
+        { "src": "/images/carousel-7.png", "alt": "" },
+        { "src": "/images/carousel-6.png", "alt": "" }
+      ]
+    },
+    {
+      "type": "featureList",
+      "items": [
+        { "title": "147", "description": "Clientes Satisfechos" },
+        { "title": "7", "description": "Años de experiencia" },
+        { "title": "400", "description": "Proyectos Realizados" },
+        { "title": "2M", "description": "Páginas Impresas" }
+      ]
+    }
+  ]
+}
