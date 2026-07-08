@@ -1,0 +1,30 @@
+{
+  "seo": {
+    "title": "Servicios - Multicart",
+    "description": "Renta, venta de impresoras y consumibles. Servicio técnico especializado en Guadalajara.",
+    "canonical": "/servicios"
+  },
+  "sections": [
+    {
+      "type": "servicesGrid",
+      "heading": "Nuestros Servicios",
+      "cards": [
+        {
+          "title": "IMPRESORAS",
+          "description": "Renta y Venta",
+          "href": "/servicios/renta-y-venta-de-multifuncionales"
+        },
+        {
+          "title": "CONSUMIBLES",
+          "description": "Venta",
+          "href": "/servicios/venta-de-consumibles"
+        },
+        {
+          "title": "SERVICIO TÉCNICO",
+          "description": "Especializado",
+          "href": "/servicios/servicio-tecnico"
+        }
+      ]
+    }
+  ]
+}
