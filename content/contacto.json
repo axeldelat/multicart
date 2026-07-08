@@ -2,7 +2,8 @@
   "seo": {
     "title": "Contacto - Multicart",
     "description": "Contáctanos en Multicart. Escríbenos o visítanos en Guadalajara. ¡Estamos para ayudarte!",
-    "canonical": "/contacto"
+    "canonical": "/contacto",
+    "ogImage": "/images/logo.png"
   },
   "sections": [
     {
