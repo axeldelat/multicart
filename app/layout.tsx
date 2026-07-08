@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Archivo } from "next/font/google";
+import Header from "@/components/layout/Header";
+import { getSite } from "@/lib/content";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -28,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${poppins.variable} ${archivo.variable}`}>
-      <body className="font-sans text-ink antialiased">{children}</body>
+      <body className="font-sans text-ink antialiased">
+        <Header site={getSite()} />
+        {children}
+      </body>
     </html>
   );
 }
