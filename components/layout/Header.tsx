@@ -132,8 +132,8 @@ export default function Header({ site }: { site: SiteData }) {
           <Image
             src="/images/logo.png"
             alt={site.name}
-            width={168}
-            height={48}
+            width={300}
+            height={124}
             className="h-10 w-auto"
             priority
           />
