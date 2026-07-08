@@ -88,6 +88,8 @@ export interface ContactBlock {
   heading?: string;
   intro?: string;
   showForm: boolean;
+  hours?: string;
+  mapEmbedUrl?: string;
 }
 
 export type Block =

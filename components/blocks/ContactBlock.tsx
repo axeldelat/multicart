@@ -8,6 +8,8 @@ export default function ContactBlock({
   heading,
   intro,
   showForm,
+  hours,
+  mapEmbedUrl,
   site,
 }: ContactBlockData & { site: SiteData }) {
   return (
@@ -39,7 +41,25 @@ export default function ContactBlock({
                 </a>
               </dd>
             </div>
+            {hours ? (
+              <div>
+                <dt className="font-semibold text-navy-soft">Horario de atención</dt>
+                <dd className="mt-1">{hours}</dd>
+              </div>
+            ) : null}
           </dl>
+          {mapEmbedUrl ? (
+            <div className="mt-8 aspect-video w-full overflow-hidden rounded-lg">
+              <iframe
+                src={mapEmbedUrl}
+                title="Ubicación de Multicart"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full border-0"
+                allowFullScreen
+              />
+            </div>
+          ) : null}
         </div>
         {showForm ? (
           <div>

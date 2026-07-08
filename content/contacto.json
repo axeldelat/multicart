@@ -9,7 +9,9 @@
       "type": "contact",
       "heading": "Nos encanta saber de ti contáctanos",
       "intro": "Da el primer paso, nosotros nos encargará del resto",
-      "showForm": true
+      "showForm": true,
+      "hours": "Lunes - Viernes 9AM - 5PM",
+      "mapEmbedUrl": "https://www.google.com/maps?q=Francisco%20Zarco%202324%2C%20Col.%20Ladr%C3%B3n%20de%20Guevara%2C%20Guadalajara%2C%20Jal.%20C.P.%2044600&output=embed"
     }
   ]
 }
