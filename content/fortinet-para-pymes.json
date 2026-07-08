@@ -1,0 +1,92 @@
+{
+  "seo": {
+    "title": "Fortinet para Pymes - Multicart",
+    "description": "¿Sabes Realmente lo Vulnerable que Está su Empresa Ahora Mismo? La ciberseguridad NO es un gasto futuro; es una póliza de seguro de vida que se necesita HOY. Cada día sin protección Fortinet adecuada, su negocio se expone a consecuencias que van más allá del costo. Empieza hoy Conoce los Riesgos Presentes La ciberseguridad NO […]",
+    "canonical": "/fortinet-para-pymes",
+    "ogImage": "/images/logo.png"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "¿Sabes Realmente lo Vulnerable que Está su Empresa Ahora Mismo?",
+      "subtitle": "La ciberseguridad NO es un gasto futuro; es una póliza de seguro de vida que se necesita HOY. Cada día sin protección Fortinet adecuada, su negocio se expone a consecuencias que van más allá del costo.",
+      "image": "/images/logo.png",
+      "buttons": [
+        { "label": "Empieza hoy", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ],
+      "background": "light"
+    },
+    {
+      "type": "imageText",
+      "heading": "Conoce los Riesgos Presentes",
+      "body": "La ciberseguridad NO es un gasto futuro; es una póliza de seguro que se necesita HOY. Cada día sin protección Fortinet adecuada, su negocio se expone a consecuencias que van más allá del costo.",
+      "image": "/images/fortinet-1.png",
+      "imageSide": "right"
+    },
+    {
+      "type": "featureList",
+      "items": [
+        {
+          "title": "Ransomware Paralizante",
+          "description": "Sus servidores, bases de datos y archivos críticos encriptados. Operaciones detenidas por días o semanas. Pagar el rescate o perder años de información."
+        },
+        {
+          "title": "Pérdida de Confianza y Clientes",
+          "description": "La filtración de datos de clientes o información sensible no solo genera multas millonarias, sino que destruye la reputación que tanto le costó construir."
+        },
+        {
+          "title": "Sanciones Legales y Cumplimiento",
+          "description": "La falta de protección adecuada le expone a sanciones regulatorias (ej. LFPDPPP en México) y demandas, especialmente si maneja datos personales o financieros."
+        },
+        {
+          "title": "El Punto Ciego de la Implementación",
+          "description": "La implementación de seguridad NO puede durar meses. Mientras otros proveedores tardan, los hackers ya están buscando la puerta abierta de su red sin protección."
+        }
+      ]
+    },
+    {
+      "type": "brandStrip",
+      "logos": [
+        { "src": "/images/fortinet-2.png", "alt": "" }
+      ]
+    },
+    {
+      "type": "featureList",
+      "heading": "Protección de Máximo Nivel en Tiempo Récord. Detenga la Amenaza Hoy",
+      "items": [
+        {
+          "title": "Poder de Detención Inmediato",
+          "description": "Implementamos la Arquitectura Fortinet Security Fabric, la solución más avanzada para detener los ataques antes de que lleguen a sus datos."
+        },
+        {
+          "title": "Velocidad vs. Vulnerabilidad",
+          "description": "Nuestro Proceso de Implementación Acelerada está diseñado para blindarlo significativamente más rápido que los métodos tradicionales, minimizando el tiempo que su empresa pasa expuesta."
+        },
+        {
+          "title": "Certeza Absoluta",
+          "description": "Somos Partner Autorizado Fortinet. La única manera de garantizar una configuración perfecta y libre de errores que pongan en riesgo su blindaje."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "🔥 ¡Actua hoy previniendo riesgos de mañana!",
+      "subtitle": "Solicite su Diagnóstico de Vulnerabilidad AHORA y Coticemos su Protección Fortinet",
+      "buttons": [
+        { "label": "Cotización", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ],
+      "background": "navy"
+    },
+    {
+      "type": "brandStrip",
+      "logos": [
+        { "src": "/images/fortinet-logo.png", "alt": "Fortinet" }
+      ]
+    },
+    {
+      "type": "richText",
+      "html": "<p>Somos distribuidores autorizados de Cero Uno Software Corporativo, canal oficial mediante el cual entregamos estas soluciones de Fortinet.</p>",
+      "background": "white"
+    }
+  ]
+}
