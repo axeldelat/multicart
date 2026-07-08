@@ -1,0 +1,5 @@
+_extraction/
+*.zip
+scratchpad-content/
+.superpowers/
+docs/
