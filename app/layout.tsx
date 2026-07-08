@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Archivo } from "next/font/google";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import { getSite } from "@/lib/content";
 import "./globals.css";
 
@@ -28,11 +30,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const site = getSite();
+
   return (
     <html lang="es" className={`${poppins.variable} ${archivo.variable}`}>
       <body className="font-sans text-ink antialiased">
-        <Header site={getSite()} />
+        <Header site={site} />
         {children}
+        <Footer site={site} />
+        <WhatsAppFloat href={site.whatsapp} />
       </body>
     </html>
   );
