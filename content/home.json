@@ -1,0 +1,135 @@
+{
+  "seo": {
+    "title": "Multicart - Multicart",
+    "description": "Renta y venta de impresoras multifuncionales en Guadalajara. Ahorra costos y mejora tu oficina.",
+    "canonical": "/",
+    "ogImage": "/images/samsung-4072.png"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Renta de Multifuncionales en Guadalajara",
+      "subtitle": "Servicio de renta y reparación de impresoras en toda la ZMG",
+      "image": "/images/samsung-4072.png",
+      "buttons": [
+        { "label": "Cotizar", "href": "/contacto", "style": "primary" }
+      ],
+      "background": "light"
+    },
+    {
+      "type": "featureList",
+      "items": [
+        { "title": "Scanner", "icon": "/images/badge-scanner.png" },
+        { "title": "Impresora", "icon": "/images/badge-impresora.png" },
+        { "title": "Copiadora", "icon": "/images/badge-copiadora.png" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "Expertos en Impresoras",
+      "body": "Somos una empresa líder en renta y venta de impresoras multifuncionales en Guadalajara. Ofrecemos soluciones integrales que incluyen mantenimiento preventivo, servicio técnico especializado y consumibles de alto desempeño y garantizados. Optimizamos hasta 30% sus costos de impresión empresarial mientras maximizamos la eficiencia de sus operaciones diarias. Nuestro equipo certificado brinda asesoría personalizada para reducir gastos y aumentar la productividad de su oficina.",
+      "image": "/images/expertos-ricoh.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Conocer más", "href": "/nosotros", "style": "primary" }
+      ]
+    },
+    {
+      "type": "servicesGrid",
+      "heading": "¡Renta impresoras en Guadalajara!",
+      "intro": "Renta de multifuncionales, renta de copiadoras e impresoras para negocios, oficinas y empresas.",
+      "cards": [
+        {
+          "title": "SAMSUNG",
+          "description": "Excelente para oficinas pequeñas a medianas que necesitan una impresora confiable blanco y negro.",
+          "image": "/images/samsung-4072.png",
+          "href": "/servicios/renta-y-venta-de-multifuncionales"
+        },
+        {
+          "title": "BROTHER",
+          "description": "Para oficinas medianas a grandes que requieren alta productividad, flexibilidad en la conectividad WIFI",
+          "image": "/images/brother-8900.png",
+          "href": "/servicios/renta-y-venta-de-multifuncionales"
+        },
+        {
+          "title": "RICOH",
+          "description": "Para oficinas grandes que necesitan imprimir documentos en color de alta calidad y gran volumen",
+          "image": "/images/ricoh.png",
+          "href": "/servicios/renta-y-venta-de-multifuncionales"
+        }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "Cartuchos de Toner",
+      "body": "Contamos con venta de cartuchos de tóner genéricos con altos estándares de calidad, que garantizan el buen funcionamiento de los equipos en toda la zona metropolitana de Guadalajara",
+      "image": "/images/consumibles-1.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más información", "href": "/servicios/venta-de-consumibles", "style": "primary" }
+      ]
+    },
+    {
+      "type": "brandStrip",
+      "heading": "Marcas con las que trabajamos",
+      "logos": [
+        { "src": "/images/carousel-1.png", "alt": "Brother" },
+        { "src": "/images/carousel-2.png", "alt": "Ricoh" },
+        { "src": "/images/carousel-3.png", "alt": "Samsung" },
+        { "src": "/images/carousel-4.png", "alt": "HP" },
+        { "src": "/images/carousel-5.png", "alt": "Lexmark" },
+        { "src": "/images/carousel-6.png", "alt": "Xerox" },
+        { "src": "/images/carousel-7.png", "alt": "Epson" },
+        { "src": "/images/carousel-8.png", "alt": "Canon" }
+      ]
+    },
+    {
+      "type": "featureList",
+      "heading": "¿Por qué elegirnos?",
+      "items": [
+        { "title": "Atención rápida", "description": "Solucionamos tu problema en menos de 8 h" },
+        { "title": "Asistencia remota", "description": "Soluciones inmediatas, sin importar tu ubicación." },
+        { "title": "Disponibilidad de Equipos", "description": "Contamos con equipos de respaldo listos para que no dejes de trabajar" },
+        { "title": "Soporte técnico", "description": "Técnicos e ingenieros capacitados para resolver tu problema" }
+      ]
+    },
+    {
+      "type": "videoGallery",
+      "heading": "Síguenos en YouTube",
+      "videos": [
+        { "youtubeId": "6tbJ_ONzTCI", "title": "Tutoriales y soluciones Multicart" }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "heading": "Testimonio de nuestros clientes",
+      "items": [
+        { "name": "ELIZABETH", "text": "Muy amable el personal", "rating": 5, "source": "Google" },
+        { "name": "Jeovani Nuñez", "text": "Excelente servicio", "rating": 5, "source": "Google" },
+        {
+          "name": "J Diego Hernandez Medina",
+          "text": "Una empresa que recomiendo ampliamente por su calidez y preocupación por solucionar las necesidades de sus clientes. Tengo un par de máquinas rentadas con ellos y no he tenido que llamarlos por tema técnico dado que se han adelantado a cualquier eventualidad mediante el mantenimiento preventivo.",
+          "rating": 5,
+          "source": "Google"
+        },
+        {
+          "name": "LGH",
+          "text": "La atención excelente, mostraron interés y preocupación hasta que solucionaron mi problema de mi impresora, y los precios bien",
+          "rating": 5,
+          "source": "Google"
+        },
+        { "name": "MONICA MICHELLE CERVANTES RAMIREZ", "text": "", "rating": 5, "source": "Google" }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Cotiza hoy",
+      "subtitle": "Renta o compra tu impresora multifuncional en minutos. Escríbenos y te asesoramos sin costo.",
+      "buttons": [
+        { "label": "Cotizar", "href": "/contacto", "style": "primary" },
+        { "label": "WhatsApp", "href": "whatsapp", "style": "secondary" }
+      ],
+      "background": "navy"
+    }
+  ]
+}
