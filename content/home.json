@@ -71,16 +71,15 @@
     },
     {
       "type": "brandStrip",
-      "heading": "Marcas con las que trabajamos",
       "logos": [
-        { "src": "/images/carousel-1.png", "alt": "Brother" },
-        { "src": "/images/carousel-2.png", "alt": "Ricoh" },
-        { "src": "/images/carousel-3.png", "alt": "Samsung" },
-        { "src": "/images/carousel-4.png", "alt": "HP" },
-        { "src": "/images/carousel-5.png", "alt": "Lexmark" },
-        { "src": "/images/carousel-6.png", "alt": "Xerox" },
-        { "src": "/images/carousel-7.png", "alt": "Epson" },
-        { "src": "/images/carousel-8.png", "alt": "Canon" }
+        { "src": "/images/carousel-1.png", "alt": "" },
+        { "src": "/images/carousel-2.png", "alt": "" },
+        { "src": "/images/carousel-3.png", "alt": "" },
+        { "src": "/images/carousel-4.png", "alt": "" },
+        { "src": "/images/carousel-5.png", "alt": "" },
+        { "src": "/images/carousel-6.png", "alt": "" },
+        { "src": "/images/carousel-7.png", "alt": "" },
+        { "src": "/images/carousel-8.png", "alt": "" }
       ]
     },
     {
@@ -120,16 +119,6 @@
         },
         { "name": "MONICA MICHELLE CERVANTES RAMIREZ", "text": "", "rating": 5, "source": "Google" }
       ]
-    },
-    {
-      "type": "cta",
-      "title": "Cotiza hoy",
-      "subtitle": "Renta o compra tu impresora multifuncional en minutos. Escríbenos y te asesoramos sin costo.",
-      "buttons": [
-        { "label": "Cotizar", "href": "/contacto", "style": "primary" },
-        { "label": "WhatsApp", "href": "whatsapp", "style": "secondary" }
-      ],
-      "background": "navy"
     }
   ]
 }
