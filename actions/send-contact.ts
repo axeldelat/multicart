@@ -3,6 +3,15 @@ import { sendTransactional } from "@/lib/plunk";
 
 export type ContactState = { ok: boolean; error?: string };
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function sendContact(_prev: ContactState, formData: FormData): Promise<ContactState> {
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
@@ -15,7 +24,7 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
     await sendTransactional({
       to: "contacto@multicart.mx",
       subject: `Nuevo contacto web: ${name}`,
-      body: `<p><b>Nombre:</b> ${name}</p><p><b>Email:</b> ${email}</p><p><b>Teléfono:</b> ${phone}</p><p><b>Mensaje:</b><br/>${message.replace(/\n/g, "<br/>")}</p>`,
+      body: `<p><b>Nombre:</b> ${escapeHtml(name)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Teléfono:</b> ${escapeHtml(phone)}</p><p><b>Mensaje:</b><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
     });
     return { ok: true };
   } catch {
