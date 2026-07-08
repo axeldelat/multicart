@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "Servicio Técnico - Multicart",
+    "description": "Servicio técnico de impresoras con atención rápida y soluciones de calidad garantizada en 8 horas.",
+    "canonical": "/servicios/servicio-tecnico",
+    "ogImage": "/images/servicio-tecnico.png"
+  },
+  "sections": [
+    {
+      "type": "imageText",
+      "heading": "Servicio Técnico",
+      "body": "<p>Nuestro servicio técnico post-venta es una de las principales garantías de valor en Multicart. Nos aseguramos de que cada intervención sea realizada con el más alto nivel de profesionalismo y honestidad, brindando soluciones efectivas y manteniendo el compromiso con la satisfacción de nuestros clientes.</p>",
+      "image": "/images/servicio-tecnico.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20informaci%C3%B3n%20de%20su%20soporte%20t%C3%A9cnico.", "style": "primary" }
+      ]
+    },
+    {
+      "type": "featureList",
+      "items": [
+        { "title": "Atención rápida", "description": "En menos de 8h resolvemos tu problema" },
+        { "title": "Equipos de respaldo", "description": "Equipos para no dejarte sin trabajar" },
+        { "title": "Calidad siempre", "description": "Comprometidos en un servicio de excelencia en cada intervención" }
+      ]
+    }
+  ]
+}
