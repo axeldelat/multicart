@@ -1,0 +1,15 @@
+{
+  "seo": {
+    "title": "Contacto - Multicart",
+    "description": "Contáctanos en Multicart. Escríbenos o visítanos en Guadalajara. ¡Estamos para ayudarte!",
+    "canonical": "/contacto"
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "heading": "Nos encanta saber de ti contáctanos",
+      "intro": "Da el primer paso, nosotros nos encargará del resto",
+      "showForm": true
+    }
+  ]
+}
