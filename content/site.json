@@ -24,7 +24,12 @@
         { "label": "Servicio técnico", "href": "/servicios/servicio-tecnico" }
       ]}
     ],
-    "legalLinks": [ { "label": "Política de privacidad", "href": "/politica-de-privacidad" } ]
+    "legalLinks": [ { "label": "Política de privacidad", "href": "/politica-de-privacidad" } ],
+    "locations": [
+      { "label": "Manzanillo", "href": "/servicios/renta-y-venta-de-multifuncionales-manzanillo" },
+      { "label": "Tepatitlán", "href": "/servicios/renta-y-venta-de-multifuncionales-tepatitlan" },
+      { "label": "Mazatlán", "href": "/servicios/renta-y-venta-de-multifuncionales-mazatlan" }
+    ]
   },
   "social": [
     { "platform": "facebook", "href": "https://www.facebook.com/RentayMantenimientoDeCopiadoras" },

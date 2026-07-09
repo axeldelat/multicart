@@ -11,7 +11,6 @@ const ROUTES = [
   "/servicios/renta-y-venta-de-multifuncionales-manzanillo",
   "/servicios/renta-y-venta-de-multifuncionales-tepatitlan",
   "/servicios/renta-y-venta-de-multifuncionales-mazatlan",
-  "/fortinet-para-pymes",
   "/contacto",
   "/politica-de-privacidad",
 ];

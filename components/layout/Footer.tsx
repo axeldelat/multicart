@@ -19,6 +19,14 @@ function YouTubeIcon() {
   );
 }
 
+function MapPinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="h-3.5 w-3.5">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+    </svg>
+  );
+}
+
 const SOCIAL_ICONS: Record<string, () => React.JSX.Element> = {
   facebook: FacebookIcon,
   whatsapp: () => <WhatsAppIcon className="h-5 w-5" />,
@@ -122,6 +130,28 @@ export default function Footer({ site }: { site: SiteData }) {
             </ul>
           </div>
         </div>
+
+        {/* Ubicaciones destacadas */}
+        {site.footer.locations && site.footer.locations.length > 0 ? (
+          <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center">
+            <span className="font-display text-xs font-semibold uppercase tracking-wide text-white/70">
+              También estamos en
+            </span>
+            <ul className="flex flex-wrap items-center gap-2.5">
+              {site.footer.locations.map((loc) => (
+                <li key={loc.href}>
+                  <Link
+                    href={loc.href}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 text-sm text-white/90 transition-colors hover:bg-accent hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  >
+                    <MapPinIcon />
+                    {loc.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
         {/* Legal + copyright */}
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">

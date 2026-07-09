@@ -28,7 +28,6 @@ app/                     Rutas (App Router). Cada página lee su JSON y lo rende
   page.tsx                 Home (/)
   nosotros/                /nosotros
   servicios/               /servicios + [slug] (3 servicios + 3 landings de ciudad)
-  fortinet-para-pymes/     /fortinet-para-pymes
   contacto/                /contacto
   politica-de-privacidad/  /politica-de-privacidad
   sitemap.ts, robots.ts    SEO

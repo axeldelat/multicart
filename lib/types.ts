@@ -116,6 +116,7 @@ export interface SiteData {
     tagline?: string;
     columns: { heading: string; links: NavItem[] }[];
     legalLinks: NavItem[];
+    locations?: NavItem[];   // pills de ciudades destacadas en el footer
   };
   social: { platform: string; href: string }[];
 }
