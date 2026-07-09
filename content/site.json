@@ -28,7 +28,8 @@
     "locations": [
       { "label": "Manzanillo", "href": "/servicios/renta-y-venta-de-multifuncionales-manzanillo" },
       { "label": "Tepatitlán", "href": "/servicios/renta-y-venta-de-multifuncionales-tepatitlan" },
-      { "label": "Mazatlán", "href": "/servicios/renta-y-venta-de-multifuncionales-mazatlan" }
+      { "label": "Mazatlán", "href": "/servicios/renta-y-venta-de-multifuncionales-mazatlan" },
+      { "label": "Playa del Carmen", "href": "/servicios/renta-y-venta-de-multifuncionales-playa-del-carmen" }
     ]
   },
   "social": [

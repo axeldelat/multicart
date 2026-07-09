@@ -9,6 +9,7 @@ const SLUGS = [
   "renta-y-venta-de-multifuncionales-manzanillo",
   "renta-y-venta-de-multifuncionales-tepatitlan",
   "renta-y-venta-de-multifuncionales-mazatlan",
+  "renta-y-venta-de-multifuncionales-playa-del-carmen",
 ];
 
 export function generateStaticParams() {

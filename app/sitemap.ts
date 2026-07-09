@@ -11,6 +11,7 @@ const ROUTES = [
   "/servicios/renta-y-venta-de-multifuncionales-manzanillo",
   "/servicios/renta-y-venta-de-multifuncionales-tepatitlan",
   "/servicios/renta-y-venta-de-multifuncionales-mazatlan",
+  "/servicios/renta-y-venta-de-multifuncionales-playa-del-carmen",
   "/contacto",
   "/politica-de-privacidad",
 ];

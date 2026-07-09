@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Renta y Venta de Multifuncionales Playa del Carmen - Multicart",
+    "description": "Renta y venta de multifuncionales Samsung, Brother y RICOH con servicio técnico y mantenimiento.",
+    "canonical": "/servicios/renta-y-venta-de-multifuncionales-playa-del-carmen",
+    "ogImage": "/images/samsung-4072.png"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Renta y venta · PLAYA DEL CARMEN, QUINTANA ROO.",
+      "title": "Multifuncionales",
+      "subtitle": "Contamos con una gran gama de impresoras, copiadoras y multifuncionales de las mejores marcas, en renta y venta.",
+      "background": "light"
+    },
+    {
+      "type": "richText",
+      "heading": "Impresoras Samsung",
+      "html": "<p>Especialistas en renta y servicios de equipos multifuncionales Samsung impresoras, copiadoras y escáneres de última generación para optimizar su negocio.</p>"
+    },
+    {
+      "type": "imageText",
+      "heading": "Impresora Multifuncional ProXpress de Samsung M4072FD",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/samsung-4072.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "Impresora Multifuncional ProXpress de Samsung M4080FX",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-2.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "Impresora Multifuncional ProXpress de Samsung M4580FX",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-3.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "Impresora Multifuncional ProXpress de Samsung M4020ND",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-4.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "richText",
+      "heading": "Impresoras Brother",
+      "html": "<p>Línea premium de impresoras multifuncionales Brother, diseñadas para maximizar la eficiencia en su entorno laboral Con su impresión láser a color de alta velocidad y calidad profesional, ofrecen un rendimiento excepcional y son la solución ideal para grupos de trabajo exigentes.</p>"
+    },
+    {
+      "type": "imageText",
+      "heading": "MFCL8900CDW BROTHER",
+      "body": "<p><strong>Tipo:</strong> Color</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-6.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "MFCL5900DW BROTHER",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/brother-8900.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "richText",
+      "heading": "Impresoras RICOH",
+      "html": "<p>Descubra la excepcional familia de equipos multifuncionales RICOH, donde la innovación se une a la confiabilidad para transformar la productividad de su oficina.</p>"
+    },
+    {
+      "type": "imageText",
+      "heading": "RICOH MP 2554-5054",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-7.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "RICOH MP 2555-5055",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/ricoh.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "RICOH MPC 2003-4503",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-8.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "RICOH MPC 3003-3504",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/consumibles-9.png",
+      "imageSide": "left",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    },
+    {
+      "type": "imageText",
+      "heading": "RICOH MPC 306-407",
+      "body": "<p><strong>Tipo:</strong> Blanco y Negro</p><p><strong>Incluye:</strong></p><ul><li>Escaneos</li><li>Servicio técnico</li><li>Tóner</li><li>Mantenimiento</li><li>Instalación y capacitación</li><li>Configuración de Usuarios</li><li>Soporte remoto</li></ul>",
+      "image": "/images/ricoh.png",
+      "imageSide": "right",
+      "buttons": [
+        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+      ]
+    }
+  ]
+}
