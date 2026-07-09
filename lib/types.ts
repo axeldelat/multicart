@@ -67,6 +67,7 @@ export interface TestimonialsBlock {
   type: "testimonials";
   heading?: string;
   items: { name: string; text: string; rating?: number; source?: string }[];
+  cta?: CTAButton;         // botón pequeño debajo de las reseñas (ej. ver en Google Maps)
 }
 
 export interface VideoGalleryBlock {

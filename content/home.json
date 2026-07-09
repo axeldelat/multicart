@@ -103,7 +103,6 @@
       "type": "testimonials",
       "heading": "Testimonio de nuestros clientes",
       "items": [
-        { "name": "ELIZABETH", "text": "Muy amable el personal", "rating": 5, "source": "Google" },
         { "name": "Jeovani Nuñez", "text": "Excelente servicio", "rating": 5, "source": "Google" },
         {
           "name": "J Diego Hernandez Medina",
@@ -116,9 +115,9 @@
           "text": "La atención excelente, mostraron interés y preocupación hasta que solucionaron mi problema de mi impresora, y los precios bien",
           "rating": 5,
           "source": "Google"
-        },
-        { "name": "MONICA MICHELLE CERVANTES RAMIREZ", "text": "", "rating": 5, "source": "Google" }
-      ]
+        }
+      ],
+      "cta": { "label": "Ver reseñas en Google Maps", "href": "https://share.google/ttasK0EKOU8Z9PQt9" }
     }
   ]
 }
