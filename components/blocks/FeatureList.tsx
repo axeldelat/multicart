@@ -5,10 +5,13 @@ type FeatureItem = FeatureListBlock["items"][number];
 
 function FeatureCard({ item }: { item: FeatureItem }) {
   return (
-    <div className="flex flex-col items-center rounded-xl bg-surface p-6 text-center">
+    <div className="flex flex-col items-center rounded-xl border border-navy/10 bg-surface p-6 text-center shadow-sm">
       {item.icon ? (
-        <div className="relative mb-4 h-12 w-12">
-          <Image src={item.icon} alt="" fill sizes="48px" className="object-contain" />
+        // Los íconos son línea blanca: van en un chip navy para que contrasten.
+        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-navy">
+          <div className="relative h-8 w-8">
+            <Image src={item.icon} alt="" fill sizes="32px" className="object-contain" />
+          </div>
         </div>
       ) : null}
       <h3 className="font-display text-base font-semibold text-navy">{item.title}</h3>
@@ -37,6 +40,14 @@ function VideoEmbed({ youtubeId, title }: NonNullable<FeatureListBlock["video"]>
 }
 
 export default function FeatureList({ heading, video, items }: FeatureListBlock) {
+  // Columnas según la cantidad de tarjetas (3 -> 3 cols, 2 -> 2 cols, resto -> 4).
+  const gridCols =
+    items.length === 3
+      ? "sm:grid-cols-3"
+      : items.length === 2
+        ? "sm:grid-cols-2"
+        : "sm:grid-cols-2 lg:grid-cols-4";
+
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 lg:px-8">
@@ -57,7 +68,7 @@ export default function FeatureList({ heading, video, items }: FeatureListBlock)
             <VideoEmbed {...video} />
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className={`grid grid-cols-1 gap-8 ${gridCols}`}>
             {items.map((item, i) => (
               <FeatureCard key={i} item={item} />
             ))}
