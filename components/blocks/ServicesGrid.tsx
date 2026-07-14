@@ -51,7 +51,9 @@ export default function ServicesGrid({ heading, intro, cards }: ServicesGridBloc
                   {card.href ? (
                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent">
                       Conocer más
-                      <ArrowIcon />
+                      <span className="transition-transform duration-200 group-hover:translate-x-1">
+                        <ArrowIcon />
+                      </span>
                     </span>
                   ) : null}
                 </div>
@@ -63,7 +65,7 @@ export default function ServicesGrid({ heading, intro, cards }: ServicesGridBloc
                 <Link
                   key={i}
                   href={card.href}
-                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy/10 bg-white shadow-sm transition-shadow hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy/10 bg-white shadow-card transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-card-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
                   {cardBody}
                 </Link>
@@ -73,7 +75,7 @@ export default function ServicesGrid({ heading, intro, cards }: ServicesGridBloc
             return (
               <div
                 key={i}
-                className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy/10 bg-white shadow-sm"
+                className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy/10 bg-white shadow-card"
               >
                 {cardBody}
               </div>

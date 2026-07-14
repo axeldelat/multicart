@@ -19,7 +19,7 @@ export default function ImageText({
           imageSide === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
         }`}
       >
-        <div className="relative h-64 w-full flex-1 overflow-hidden rounded-2xl shadow-lg sm:h-80 lg:h-96">
+        <div className="relative h-64 w-full flex-1 overflow-hidden rounded-2xl shadow-card-lg ring-1 ring-navy/5 sm:h-80 lg:h-96">
           <Image
             src={image}
             alt=""

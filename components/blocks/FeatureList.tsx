@@ -5,7 +5,7 @@ type FeatureItem = FeatureListBlock["items"][number];
 
 function FeatureCard({ item }: { item: FeatureItem }) {
   return (
-    <div className="flex flex-col items-center rounded-xl border border-navy/10 bg-surface p-6 text-center shadow-sm">
+    <div className="flex flex-col items-center rounded-xl border border-navy/10 bg-surface p-6 text-center shadow-card transition-transform duration-300 hover:-translate-y-1">
       {item.icon ? (
         // Los íconos son línea blanca: van en un chip navy para que contrasten.
         <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-navy">

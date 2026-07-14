@@ -13,6 +13,10 @@
   --font-sans: var(--font-poppins);
   --font-display: var(--font-archivo);
   --animate-marquee: marquee 32s linear infinite;
+
+  /* Sombras tintadas con el navy de marca (no negro plano). */
+  --shadow-card: 0 4px 16px -6px rgb(28 36 75 / 0.14);
+  --shadow-card-lg: 0 22px 48px -16px rgb(28 36 75 / 0.32);
 }
 
 @keyframes marquee {
@@ -21,5 +25,45 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tipografía premium: encabezados con tracking apretado y balanceo de líneas. */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Reveal on-scroll con CSS scroll-driven (progressive enhancement).
+   Sin JS: el contenido es visible por defecto; solo anima donde el
+   navegador lo soporta y no hay prefers-reduced-motion. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 38%;
+    }
   }
 }

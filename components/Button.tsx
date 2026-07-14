@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { CTAButton as CTAButtonData, SiteData } from "@/lib/types";
 
 const VARIANT_CLASSES: Record<NonNullable<CTAButtonData["style"]>, string> = {
-  primary: "bg-accent text-white hover:bg-accent-soft focus-visible:outline-navy",
+  primary:
+    "bg-accent text-white shadow-[0_8px_22px_-10px_rgb(255_127_42/0.55)] hover:bg-accent-soft hover:shadow-[0_14px_30px_-10px_rgb(255_127_42/0.6)] focus-visible:outline-navy",
   secondary:
     "border-2 border-navy text-navy hover:bg-navy hover:text-white focus-visible:outline-accent",
   ghost:
@@ -10,7 +11,7 @@ const VARIANT_CLASSES: Record<NonNullable<CTAButtonData["style"]>, string> = {
 };
 
 const BASE =
-  "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:text-base";
+  "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-[background-color,color,transform,box-shadow] duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:text-base";
 
 /**
  * Sentinel hrefs a content author can use in JSON instead of hardcoding

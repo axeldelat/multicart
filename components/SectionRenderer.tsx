@@ -18,38 +18,45 @@ export default function SectionRenderer({
   sections: Block[];
   site: SiteData;
 }) {
+  function renderBlock(block: Block) {
+    switch (block.type) {
+      case "hero":
+        return <Hero {...block} />;
+      case "servicesGrid":
+        return <ServicesGrid {...block} />;
+      case "brandStrip":
+        return <BrandStrip {...block} />;
+      case "richText":
+        return <RichText {...block} />;
+      case "featureList":
+        return <FeatureList {...block} />;
+      case "imageText":
+        return <ImageText {...block} />;
+      case "testimonials":
+        return <Testimonials {...block} />;
+      case "videoGallery":
+        return <VideoGallery {...block} />;
+      case "cta":
+        return <CTA {...block} site={site} />;
+      case "contact":
+        return <ContactBlock {...block} site={site} />;
+      case "stats":
+        return <Stats {...block} />;
+      default: {
+        const _exhaustiveCheck: never = block;
+        return _exhaustiveCheck;
+      }
+    }
+  }
+
   return (
     <>
-      {sections.map((block, i) => {
-        switch (block.type) {
-          case "hero":
-            return <Hero key={i} {...block} />;
-          case "servicesGrid":
-            return <ServicesGrid key={i} {...block} />;
-          case "brandStrip":
-            return <BrandStrip key={i} {...block} />;
-          case "richText":
-            return <RichText key={i} {...block} />;
-          case "featureList":
-            return <FeatureList key={i} {...block} />;
-          case "imageText":
-            return <ImageText key={i} {...block} />;
-          case "testimonials":
-            return <Testimonials key={i} {...block} />;
-          case "videoGallery":
-            return <VideoGallery key={i} {...block} />;
-          case "cta":
-            return <CTA key={i} {...block} site={site} />;
-          case "contact":
-            return <ContactBlock key={i} {...block} site={site} />;
-          case "stats":
-            return <Stats key={i} {...block} />;
-          default: {
-            const _exhaustiveCheck: never = block;
-            return _exhaustiveCheck;
-          }
-        }
-      })}
+      {sections.map((block, i) => (
+        // El hero no lleva reveal (está sobre el pliegue); el resto anima al entrar.
+        <div key={i} className={block.type === "hero" ? undefined : "reveal"}>
+          {renderBlock(block)}
+        </div>
+      ))}
     </>
   );
 }

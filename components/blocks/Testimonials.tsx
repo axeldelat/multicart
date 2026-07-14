@@ -38,7 +38,10 @@ export default function Testimonials({ heading, items, cta }: TestimonialsBlock)
         ) : null}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
-            <figure key={i} className="flex flex-col rounded-xl bg-white p-6 shadow-sm">
+            <figure
+              key={i}
+              className="flex flex-col rounded-xl border border-navy/5 bg-white p-6 shadow-card transition-transform duration-300 hover:-translate-y-1"
+            >
               {typeof item.rating === "number" ? <Stars rating={item.rating} /> : null}
               <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-navy-soft">
                 &ldquo;{item.text}&rdquo;

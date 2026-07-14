@@ -53,7 +53,24 @@ export default function Hero({
   const isDark = background === "navy";
 
   return (
-    <section className={isDark ? "bg-navy text-white" : "bg-surface text-navy"}>
+    <section
+      className={`relative isolate overflow-hidden ${
+        isDark ? "bg-navy text-white" : "bg-surface text-navy"
+      }`}
+    >
+      {/* Glow ambiental para dar profundidad (evita el look plano). */}
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute -top-24 right-[-10%] -z-10 h-[28rem] w-[28rem] rounded-full blur-3xl ${
+          isDark ? "bg-brand-blue/20" : "bg-accent/10"
+        }`}
+      />
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute bottom-[-30%] left-[-10%] -z-10 h-[24rem] w-[24rem] rounded-full blur-3xl ${
+          isDark ? "bg-accent/10" : "bg-brand-blue/10"
+        }`}
+      />
       <div
         className={`mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-16 lg:px-8 lg:py-24 ${
           image ? "lg:flex-row" : ""
@@ -97,7 +114,7 @@ export default function Hero({
               fill
               priority
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="rounded-2xl object-cover shadow-xl"
+              className="rounded-2xl object-cover shadow-card-lg ring-1 ring-navy/5"
             />
           </div>
         ) : null}

@@ -3,8 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import type { SiteData, NavItem } from "@/lib/types";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+
+// Un item está activo si es la ruta actual (o una subruta, ej. /servicios/...).
+function useIsActive() {
+  const pathname = usePathname();
+  return (href: string) =>
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
+}
 
 function ChevronIcon({ open }: { open: boolean }) {
   return (
@@ -50,11 +58,13 @@ function HamburgerIcon({ open }: { open: boolean }) {
 function ServicesDropdown({
   item,
   open,
+  active,
   onOpen,
   onClose,
 }: {
   item: NavItem;
   open: boolean;
+  active: boolean;
   onOpen: () => void;
   onClose: () => void;
 }) {
@@ -72,9 +82,12 @@ function ServicesDropdown({
     >
       <button
         type="button"
-        className="flex items-center gap-1 rounded py-2 font-medium text-navy transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        className={`relative flex items-center gap-1 rounded py-2 font-medium transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:rounded-full after:bg-accent after:transition-all after:duration-200 hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+          active ? "text-accent after:w-full" : "text-navy after:w-0 hover:after:w-full"
+        }`}
         aria-haspopup="true"
         aria-expanded={open}
+        aria-current={active ? "page" : undefined}
         onClick={onOpen}
         onFocus={onOpen}
       >
@@ -119,6 +132,7 @@ export default function Header({ site }: { site: SiteData }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
   const [mobileServiciosOpen, setMobileServiciosOpen] = useState(false);
+  const isActive = useIsActive();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-navy/5 bg-white text-navy">
@@ -151,6 +165,7 @@ export default function Header({ site }: { site: SiteData }) {
                   key={item.href}
                   item={item}
                   open={desktopDropdownOpen}
+                  active={isActive(item.href)}
                   onOpen={() => setDesktopDropdownOpen(true)}
                   onClose={() => setDesktopDropdownOpen(false)}
                 />
@@ -158,7 +173,12 @@ export default function Header({ site }: { site: SiteData }) {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="rounded py-2 font-medium text-navy transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                    className={`relative rounded py-2 font-medium transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:rounded-full after:bg-accent after:transition-all after:duration-200 hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                      isActive(item.href)
+                        ? "text-accent after:w-full"
+                        : "text-navy after:w-0 hover:after:w-full"
+                    }`}
                   >
                     {item.label}
                   </Link>
@@ -204,7 +224,9 @@ export default function Header({ site }: { site: SiteData }) {
               <li key={item.href}>
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between rounded py-2.5 font-medium text-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  className={`flex w-full items-center justify-between rounded py-2.5 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                    isActive(item.href) ? "text-accent" : "text-navy"
+                  }`}
                   aria-expanded={mobileServiciosOpen}
                   aria-controls="mobile-submenu-servicios"
                   onClick={() => setMobileServiciosOpen((o) => !o)}
@@ -243,7 +265,10 @@ export default function Header({ site }: { site: SiteData }) {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block rounded py-2.5 font-medium text-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  aria-current={isActive(item.href) ? "page" : undefined}
+                  className={`block rounded py-2.5 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                    isActive(item.href) ? "text-accent" : "text-navy"
+                  }`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
