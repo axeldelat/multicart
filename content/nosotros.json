@@ -50,23 +50,23 @@
       ]
     },
     {
-      "type": "featureList",
+      "type": "stats",
       "items": [
         {
-          "title": "147",
-          "description": "Clientes Satisfechos"
+          "value": "147",
+          "label": "Clientes Satisfechos"
         },
         {
-          "title": "7",
-          "description": "Años de experiencia"
+          "value": "7",
+          "label": "Años de experiencia"
         },
         {
-          "title": "400",
-          "description": "Proyectos Realizados"
+          "value": "400",
+          "label": "Proyectos Realizados"
         },
         {
-          "title": "2M",
-          "description": "Páginas Impresas"
+          "value": "2M",
+          "label": "Páginas Impresas"
         }
       ]
     }

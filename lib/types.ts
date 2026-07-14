@@ -96,10 +96,16 @@ export interface ContactBlock {
   mapEmbedUrl?: string;
 }
 
+export interface StatsBlock {
+  type: "stats";
+  heading?: string;
+  items: { value: string; label: string }[];   // value: "147", "2M", "400"...
+}
+
 export type Block =
   | HeroBlock | ServicesGridBlock | BrandStripBlock | RichTextBlock
   | FeatureListBlock | ImageTextBlock | TestimonialsBlock
-  | VideoGalleryBlock | CTABlock | ContactBlock;
+  | VideoGalleryBlock | CTABlock | ContactBlock | StatsBlock;
 
 export interface PageContent {
   seo: SEO;

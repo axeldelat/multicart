@@ -9,6 +9,7 @@ import Testimonials from "@/components/blocks/Testimonials";
 import VideoGallery from "@/components/blocks/VideoGallery";
 import CTA from "@/components/blocks/CTA";
 import ContactBlock from "@/components/blocks/ContactBlock";
+import Stats from "@/components/blocks/Stats";
 
 export default function SectionRenderer({
   sections,
@@ -41,6 +42,8 @@ export default function SectionRenderer({
             return <CTA key={i} {...block} site={site} />;
           case "contact":
             return <ContactBlock key={i} {...block} site={site} />;
+          case "stats":
+            return <Stats key={i} {...block} />;
           default: {
             const _exhaustiveCheck: never = block;
             return _exhaustiveCheck;
