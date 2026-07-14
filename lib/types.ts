@@ -73,6 +73,8 @@ export interface TestimonialsBlock {
 export interface VideoGalleryBlock {
   type: "videoGallery";
   heading?: string;
+  body?: string;           // texto descriptivo (columna de texto, junto al video)
+  cta?: CTAButton;         // enlace al canal de YouTube
   videos: { youtubeId: string; title: string }[];
 }
 
