@@ -53,19 +53,19 @@
       "type": "stats",
       "items": [
         {
-          "value": "147",
+          "value": "147+",
           "label": "Clientes Satisfechos"
         },
         {
-          "value": "7",
+          "value": "7+",
           "label": "Años de experiencia"
         },
         {
-          "value": "400",
+          "value": "400+",
           "label": "Proyectos Realizados"
         },
         {
-          "value": "2M",
+          "value": "2M+",
           "label": "Páginas Impresas"
         }
       ]
