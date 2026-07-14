@@ -85,20 +85,12 @@
     {
       "type": "featureList",
       "heading": "¿Por qué elegirnos?",
+      "video": { "youtubeId": "6tbJ_ONzTCI", "title": "Multicart en YouTube" },
       "items": [
         { "title": "Atención rápida", "description": "Solucionamos tu problema en menos de 8 h" },
         { "title": "Asistencia remota", "description": "Soluciones inmediatas, sin importar tu ubicación." },
         { "title": "Disponibilidad de Equipos", "description": "Contamos con equipos de respaldo listos para que no dejes de trabajar" },
         { "title": "Soporte técnico", "description": "Técnicos e ingenieros capacitados para resolver tu problema" }
-      ]
-    },
-    {
-      "type": "videoGallery",
-      "heading": "Síguenos en YouTube",
-      "body": "Tutoriales y soluciones a problemas comunes en nuestra biblioteca de videos.",
-      "cta": { "label": "Ver nuestro canal", "href": "https://www.youtube.com/@Multicart-bw1rk", "style": "primary" },
-      "videos": [
-        { "youtubeId": "6tbJ_ONzTCI", "title": "Tutoriales y soluciones Multicart" }
       ]
     },
     {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { FeatureListBlock } from "@/lib/types";
 
-export default function FeatureList({ heading, items }: FeatureListBlock) {
+export default function FeatureList({ heading, video, items }: FeatureListBlock) {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 lg:px-8">
@@ -9,6 +9,20 @@ export default function FeatureList({ heading, items }: FeatureListBlock) {
           <h2 className="mb-12 text-center font-display text-2xl font-bold text-navy sm:text-3xl">
             {heading}
           </h2>
+        ) : null}
+        {video ? (
+          <div className="mx-auto mb-12 w-full max-w-3xl overflow-hidden rounded-xl bg-navy shadow-sm">
+            <div className="relative aspect-video w-full">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+                title={video.title}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full"
+              />
+            </div>
+          </div>
         ) : null}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => (

@@ -51,6 +51,7 @@ export interface RichTextBlock {
 export interface FeatureListBlock {
   type: "featureList";
   heading?: string;
+  video?: { youtubeId: string; title: string };  // video centrado entre el título y las tarjetas
   items: { title: string; description?: string; icon?: string }[];
 }
 
