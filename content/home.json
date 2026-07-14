@@ -12,16 +12,29 @@
       "subtitle": "Servicio de renta y reparación de impresoras en toda la ZMG",
       "image": "/images/samsung-4072.png",
       "buttons": [
-        { "label": "Cotizar", "href": "/contacto", "style": "primary" }
+        {
+          "label": "Cotizar",
+          "href": "/contacto",
+          "style": "primary"
+        }
       ],
       "background": "light"
     },
     {
       "type": "featureList",
       "items": [
-        { "title": "Scanner", "icon": "/images/badge-scanner.png" },
-        { "title": "Impresora", "icon": "/images/badge-impresora.png" },
-        { "title": "Copiadora", "icon": "/images/badge-copiadora.png" }
+        {
+          "title": "Scanner",
+          "icon": "/images/badge-scanner.png"
+        },
+        {
+          "title": "Impresora",
+          "icon": "/images/badge-impresora.png"
+        },
+        {
+          "title": "Copiadora",
+          "icon": "/images/badge-copiadora.png"
+        }
       ]
     },
     {
@@ -31,7 +44,11 @@
       "image": "/images/expertos-ricoh.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Conocer más", "href": "/nosotros", "style": "primary" }
+        {
+          "label": "Conocer más",
+          "href": "/nosotros",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -66,38 +83,87 @@
       "image": "/images/consumibles-1.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más información", "href": "/servicios/venta-de-consumibles", "style": "primary" }
+        {
+          "label": "Más información",
+          "href": "/servicios/venta-de-consumibles",
+          "style": "primary"
+        }
       ]
     },
     {
       "type": "brandStrip",
+      "heading": "Marcas con las que trabajamos",
       "logos": [
-        { "src": "/images/carousel-1.png", "alt": "" },
-        { "src": "/images/carousel-2.png", "alt": "" },
-        { "src": "/images/carousel-3.png", "alt": "" },
-        { "src": "/images/carousel-4.png", "alt": "" },
-        { "src": "/images/carousel-5.png", "alt": "" },
-        { "src": "/images/carousel-6.png", "alt": "" },
-        { "src": "/images/carousel-7.png", "alt": "" },
-        { "src": "/images/carousel-8.png", "alt": "" }
+        {
+          "src": "/images/carousel-1.png",
+          "alt": "Brother"
+        },
+        {
+          "src": "/images/carousel-2.png",
+          "alt": "RICOH"
+        },
+        {
+          "src": "/images/carousel-3.png",
+          "alt": "Samsung"
+        },
+        {
+          "src": "/images/carousel-4.png",
+          "alt": "HP"
+        },
+        {
+          "src": "/images/carousel-5.png",
+          "alt": "Lexmark"
+        },
+        {
+          "src": "/images/carousel-6.png",
+          "alt": "Xerox"
+        },
+        {
+          "src": "/images/carousel-7.png",
+          "alt": "Epson"
+        },
+        {
+          "src": "/images/carousel-8.png",
+          "alt": "Canon"
+        }
       ]
     },
     {
       "type": "featureList",
       "heading": "¿Por qué elegirnos?",
-      "video": { "youtubeId": "6tbJ_ONzTCI", "title": "Multicart en YouTube" },
+      "video": {
+        "youtubeId": "6tbJ_ONzTCI",
+        "title": "Multicart en YouTube"
+      },
       "items": [
-        { "title": "Atención rápida", "description": "Solucionamos tu problema en menos de 8 h" },
-        { "title": "Asistencia remota", "description": "Soluciones inmediatas, sin importar tu ubicación." },
-        { "title": "Disponibilidad de Equipos", "description": "Contamos con equipos de respaldo listos para que no dejes de trabajar" },
-        { "title": "Soporte técnico", "description": "Técnicos e ingenieros capacitados para resolver tu problema" }
+        {
+          "title": "Atención rápida",
+          "description": "Solucionamos tu problema en menos de 8 h"
+        },
+        {
+          "title": "Asistencia remota",
+          "description": "Soluciones inmediatas, sin importar tu ubicación."
+        },
+        {
+          "title": "Disponibilidad de Equipos",
+          "description": "Contamos con equipos de respaldo listos para que no dejes de trabajar"
+        },
+        {
+          "title": "Soporte técnico",
+          "description": "Técnicos e ingenieros capacitados para resolver tu problema"
+        }
       ]
     },
     {
       "type": "testimonials",
       "heading": "Testimonio de nuestros clientes",
       "items": [
-        { "name": "Jeovani Nuñez", "text": "Excelente servicio", "rating": 5, "source": "Google" },
+        {
+          "name": "Jeovani Nuñez",
+          "text": "Excelente servicio",
+          "rating": 5,
+          "source": "Google"
+        },
         {
           "name": "J Diego Hernandez Medina",
           "text": "Una empresa que recomiendo ampliamente por su calidez y preocupación por solucionar las necesidades de sus clientes. Tengo un par de máquinas rentadas con ellos y no he tenido que llamarlos por tema técnico dado que se han adelantado a cualquier eventualidad mediante el mantenimiento preventivo.",
@@ -111,7 +177,10 @@
           "source": "Google"
         }
       ],
-      "cta": { "label": "Ver reseñas en Google Maps", "href": "https://share.google/ttasK0EKOU8Z9PQt9" }
+      "cta": {
+        "label": "Ver reseñas en Google Maps",
+        "href": "https://share.google/ttasK0EKOU8Z9PQt9"
+      }
     }
   ]
 }

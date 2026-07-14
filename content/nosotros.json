@@ -14,25 +14,60 @@
     },
     {
       "type": "brandStrip",
-      "heading": "Nos Respaldan Grandes Marcas Solo las mejores marcas y soluciones para garantizar la calidad de nuestro servicio.",
       "logos": [
-        { "src": "/images/carousel-5.png", "alt": "" },
-        { "src": "/images/carousel-4.png", "alt": "" },
-        { "src": "/images/carousel-3.png", "alt": "" },
-        { "src": "/images/carousel-2.png", "alt": "" },
-        { "src": "/images/carousel-1.png", "alt": "" },
-        { "src": "/images/carousel-8.png", "alt": "" },
-        { "src": "/images/carousel-7.png", "alt": "" },
-        { "src": "/images/carousel-6.png", "alt": "" }
+        {
+          "src": "/images/carousel-5.png",
+          "alt": "Lexmark"
+        },
+        {
+          "src": "/images/carousel-4.png",
+          "alt": "HP"
+        },
+        {
+          "src": "/images/carousel-3.png",
+          "alt": "Samsung"
+        },
+        {
+          "src": "/images/carousel-2.png",
+          "alt": "RICOH"
+        },
+        {
+          "src": "/images/carousel-1.png",
+          "alt": "Brother"
+        },
+        {
+          "src": "/images/carousel-8.png",
+          "alt": "Canon"
+        },
+        {
+          "src": "/images/carousel-7.png",
+          "alt": "Epson"
+        },
+        {
+          "src": "/images/carousel-6.png",
+          "alt": "Xerox"
+        }
       ]
     },
     {
       "type": "featureList",
       "items": [
-        { "title": "147", "description": "Clientes Satisfechos" },
-        { "title": "7", "description": "Años de experiencia" },
-        { "title": "400", "description": "Proyectos Realizados" },
-        { "title": "2M", "description": "Páginas Impresas" }
+        {
+          "title": "147",
+          "description": "Clientes Satisfechos"
+        },
+        {
+          "title": "7",
+          "description": "Años de experiencia"
+        },
+        {
+          "title": "400",
+          "description": "Proyectos Realizados"
+        },
+        {
+          "title": "2M",
+          "description": "Páginas Impresas"
+        }
       ]
     }
   ]

@@ -12,21 +12,49 @@
       "subtitle": "Pregunta por la gran cantidad de marcas de tóner genérico de alto desempeño que tenemos para ofrecerte",
       "image": "/images/consumibles-hero.png",
       "buttons": [
-        { "label": "Cotiza aquí", "href": "https://wa.me/5213321910090?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20venta%20de%20cartuchos%20de%20toner%20que%20manejan.", "style": "primary" }
+        {
+          "label": "Cotiza aquí",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20venta%20de%20cartuchos%20de%20toner%20que%20manejan.",
+          "style": "primary"
+        }
       ],
       "background": "light"
     },
     {
       "type": "brandStrip",
       "logos": [
-        { "src": "/images/carousel-1.png", "alt": "" },
-        { "src": "/images/carousel-2.png", "alt": "" },
-        { "src": "/images/carousel-3.png", "alt": "" },
-        { "src": "/images/carousel-4.png", "alt": "" },
-        { "src": "/images/carousel-5.png", "alt": "" },
-        { "src": "/images/carousel-6.png", "alt": "" },
-        { "src": "/images/carousel-7.png", "alt": "" },
-        { "src": "/images/carousel-8.png", "alt": "" }
+        {
+          "src": "/images/carousel-1.png",
+          "alt": "Brother"
+        },
+        {
+          "src": "/images/carousel-2.png",
+          "alt": "RICOH"
+        },
+        {
+          "src": "/images/carousel-3.png",
+          "alt": "Samsung"
+        },
+        {
+          "src": "/images/carousel-4.png",
+          "alt": "HP"
+        },
+        {
+          "src": "/images/carousel-5.png",
+          "alt": "Lexmark"
+        },
+        {
+          "src": "/images/carousel-6.png",
+          "alt": "Xerox"
+        },
+        {
+          "src": "/images/carousel-7.png",
+          "alt": "Epson"
+        },
+        {
+          "src": "/images/carousel-8.png",
+          "alt": "Canon"
+        }
       ]
     }
   ]
