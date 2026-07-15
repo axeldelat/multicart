@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 
 // Detecta clicks en CUALQUIER link de WhatsApp (Header, Footer, botón flotante,
@@ -8,6 +9,23 @@ import { trackEvent } from "@/lib/analytics";
 const WHATSAPP_RE = /(wa\.me|api\.whatsapp\.com|whatsapp:\/\/)/i;
 
 export default function AnalyticsEvents() {
+  const pathname = usePathname();
+  const isFirstView = useRef(true);
+
+  // Pageviews en navegación SPA. El primer view ya lo cuenta el gtag('config')
+  // inicial, así que se salta el primer render para no duplicarlo.
+  useEffect(() => {
+    if (isFirstView.current) {
+      isFirstView.current = false;
+      return;
+    }
+    trackEvent("page_view", {
+      page_path: pathname,
+      page_location: window.location.href,
+      page_title: document.title,
+    });
+  }, [pathname]);
+
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;
