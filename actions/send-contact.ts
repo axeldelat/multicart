@@ -20,9 +20,17 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   if (formData.get("company")) return { ok: true }; // honeypot
   if (!name || !email || !message) return { ok: false, error: "Faltan campos obligatorios." };
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "Correo inválido." };
+
+  // Destino según entorno: producción -> reportes@multicart.mx;
+  // pruebas (local / preview de Vercel) -> correo del dueño para no llenar reportes.
+  const to =
+    process.env.VERCEL_ENV === "production"
+      ? "reportes@multicart.mx"
+      : "axeldelat@gmail.com";
+
   try {
     await sendTransactional({
-      to: "reportes@multicart.mx",
+      to,
       from: "no-reply@multicart.mx",
       subject: `Nuevo contacto web: ${name}`,
       body: `<p><b>Nombre:</b> ${escapeHtml(name)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Teléfono:</b> ${escapeHtml(phone)}</p><p><b>Mensaje:</b><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
