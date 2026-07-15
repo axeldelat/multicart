@@ -23,6 +23,7 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   try {
     await sendTransactional({
       to: "reportes@multicart.mx",
+      from: "no-reply@multicart.mx",
       subject: `Nuevo contacto web: ${name}`,
       body: `<p><b>Nombre:</b> ${escapeHtml(name)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Teléfono:</b> ${escapeHtml(phone)}</p><p><b>Mensaje:</b><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
     });
