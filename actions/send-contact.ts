@@ -22,7 +22,7 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "Correo inválido." };
   try {
     await sendTransactional({
-      to: "contacto@multicart.mx",
+      to: "reportes@multicart.mx",
       subject: `Nuevo contacto web: ${name}`,
       body: `<p><b>Nombre:</b> ${escapeHtml(name)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Teléfono:</b> ${escapeHtml(phone)}</p><p><b>Mensaje:</b><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
     });
