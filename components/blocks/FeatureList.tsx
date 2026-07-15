@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { FeatureListBlock } from "@/lib/types";
+import YouTubeFacade from "@/components/YouTubeFacade";
 
 type FeatureItem = FeatureListBlock["items"][number];
 
@@ -18,23 +19,6 @@ function FeatureCard({ item }: { item: FeatureItem }) {
       {item.description ? (
         <p className="mt-2 text-sm leading-relaxed text-navy-soft">{item.description}</p>
       ) : null}
-    </div>
-  );
-}
-
-function VideoEmbed({ youtubeId, title }: NonNullable<FeatureListBlock["video"]>) {
-  return (
-    <div className="overflow-hidden rounded-xl bg-navy shadow-sm">
-      <div className="relative aspect-video w-full">
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
-          title={title}
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="absolute inset-0 h-full w-full"
-        />
-      </div>
     </div>
   );
 }
@@ -65,7 +49,7 @@ export default function FeatureList({ heading, video, items }: FeatureListBlock)
                 <FeatureCard key={i} item={item} />
               ))}
             </div>
-            <VideoEmbed {...video} />
+            <YouTubeFacade youtubeId={video.youtubeId} title={video.title} />
           </div>
         ) : (
           <div className={`grid grid-cols-1 gap-8 ${gridCols}`}>
