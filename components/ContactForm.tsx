@@ -1,7 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { sendContact, type ContactState } from "@/actions/send-contact";
+import { trackEvent } from "@/lib/analytics";
 
 const initialState: ContactState = { ok: false };
 
@@ -10,6 +11,11 @@ const INPUT_CLASSES =
 
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(sendContact, initialState);
+
+  // Envío exitoso -> evento GA4 recomendado para lead.
+  useEffect(() => {
+    if (state.ok) trackEvent("generate_lead", { method: "contact_form" });
+  }, [state.ok]);
 
   if (state.ok) {
     return (
