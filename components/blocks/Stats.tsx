@@ -19,7 +19,7 @@ function StatItem({ value, label, run }: { value: string; label: string; run: bo
   useEffect(() => {
     if (!run || num === null) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplay(finalDisplay);
+      setDisplay(num.toLocaleString("es-MX"));
       return;
     }
     const duration = 1600;
@@ -37,7 +37,7 @@ function StatItem({ value, label, run }: { value: string; label: string; run: bo
     };
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
-  }, [run, num, value]);
+  }, [run, num]);
 
   return (
     <div className="text-center">
