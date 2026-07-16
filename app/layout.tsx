@@ -9,6 +9,7 @@ import { getSite } from "@/lib/content";
 import "./globals.css";
 
 const GA_ID = "G-Y53X9HSQ1E";
+const CLARITY_ID = "xn3el8d919";
 const isProd = process.env.VERCEL_ENV === "production";
 
 // No se precarga: libera el camino crítico (mejor LCP simulado). El texto
@@ -65,6 +66,10 @@ export default function RootLayout({
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
             strategy="lazyOnload"
           />
+          {/* Microsoft Clarity (heatmaps/grabaciones), diferido a idle. */}
+          <Script id="ms-clarity" strategy="lazyOnload">
+            {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${CLARITY_ID}");`}
+          </Script>
         </>
       ) : null}
     </html>
