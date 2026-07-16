@@ -26,6 +26,7 @@ export default function BrandStrip({ heading, logos }: BrandStripBlock) {
       {/* Carrusel infinito: máscara de degradado en los bordes + pausa al hover */}
       <div
         className="group relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]"
+        role="group"
         aria-label={heading ?? "Marcas"}
       >
         <div className="flex w-max animate-marquee items-center group-hover:[animation-play-state:paused]">

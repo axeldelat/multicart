@@ -4,7 +4,7 @@ function Stars({ rating }: { rating: number }) {
   const rounded = Math.max(0, Math.min(5, Math.round(rating)));
 
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${rounded} de 5 estrellas`}>
+    <div className="flex items-center gap-0.5" role="img" aria-label={`${rounded} de 5 estrellas`}>
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
