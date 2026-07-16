@@ -32,13 +32,13 @@ export function resolveSiteHref(href: string, site: SiteData): string {
   }
 }
 
-export default function CTAButton({ label, href, style = "primary" }: CTAButtonData) {
+export default function CTAButton({ label, href, style = "primary", ariaLabel }: CTAButtonData) {
   const className = `${BASE} ${VARIANT_CLASSES[style]}`;
 
   // Internal routes always start with "/" — use next/link for prefetch/SPA nav.
   if (href.startsWith("/")) {
     return (
-      <Link href={href} className={className}>
+      <Link href={href} className={className} aria-label={ariaLabel}>
         {label}
       </Link>
     );
@@ -48,14 +48,20 @@ export default function CTAButton({ label, href, style = "primary" }: CTAButtonD
   const isHttp = href.startsWith("http://") || href.startsWith("https://");
   if (isHttp) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        aria-label={ariaLabel}
+      >
         {label}
       </a>
     );
   }
 
   return (
-    <a href={href} className={className}>
+    <a href={href} className={className} aria-label={ariaLabel}>
       {label}
     </a>
   );

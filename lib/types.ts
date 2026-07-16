@@ -9,6 +9,7 @@ export interface CTAButton {
   label: string;
   href: string;            // ruta interna, wa.me, tel:, o mailto:
   style?: "primary" | "secondary" | "ghost";
+  ariaLabel?: string;      // nombre accesible descriptivo (si el label es genérico)
 }
 
 export interface HeroBlock {

@@ -39,7 +39,13 @@ export default function ImageText({
           {buttons && buttons.length > 0 ? (
             <div className="mt-6 flex flex-wrap gap-4">
               {buttons.map((button, i) => (
-                <CTAButton key={i} {...button} />
+                <CTAButton
+                  key={i}
+                  {...button}
+                  // Nombre accesible descriptivo cuando el label es genérico
+                  // (ej. "Más información: Cartuchos de Toner").
+                  ariaLabel={button.ariaLabel ?? (heading ? `${button.label}: ${heading}` : undefined)}
+                />
               ))}
             </div>
           ) : null}
