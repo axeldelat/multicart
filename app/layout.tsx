@@ -11,11 +11,14 @@ import "./globals.css";
 const GA_ID = "G-Y53X9HSQ1E";
 const isProd = process.env.VERCEL_ENV === "production";
 
+// No se precarga: libera el camino crítico (mejor LCP simulado). El texto
+// renderiza en fallback y cambia con swap sin provocar layout shift (CLS 0).
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
+  preload: false,
 });
 
 // Archivo (display, solo encabezados): no se precarga para no competir en la
