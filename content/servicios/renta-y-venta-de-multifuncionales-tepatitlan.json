@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Renta y Venta de Multifuncionales Tepatitlán - Multicart",
-    "description": "Renta y venta de multifuncionales Samsung, Brother y RICOH con servicio técnico y mantenimiento.",
+    "description": "Renta y venta de multifuncionales en Tepatitlán, Jalisco: equipos Samsung, Brother y RICOH con tóner, mantenimiento y técnico especializado en la zona.",
     "canonical": "/servicios/renta-y-venta-de-multifuncionales-tepatitlan",
     "ogImage": "/images/samsung-4072.png"
   },
@@ -10,8 +10,14 @@
       "type": "hero",
       "eyebrow": "Renta y venta · TEPATITLÁN, JALISCO.",
       "title": "Multifuncionales",
-      "subtitle": "Contamos con una gran gama de impresoras, copiadoras y multifuncionales de las mejores marcas, en renta y venta.",
+      "subtitle": "Renta y venta de impresoras y multifuncionales para empresas de Tepatitlán y Los Altos de Jalisco, con técnico especializado en la zona y respaldo desde Guadalajara.",
       "background": "light"
+    },
+    {
+      "type": "richText",
+      "heading": "Renta y venta de multifuncionales en Tepatitlán",
+      "html": "<p>Tepatitlán de Morelos es uno de los motores económicos de Los Altos de Jalisco, con una fuerte actividad agroindustrial —avícola, ganadera y tequilera— además de comercio y servicios que requieren imprimir y digitalizar documentación de forma constante. En Multicart ofrecemos multifuncionales Samsung, Brother y RICOH en renta y venta para ese entorno productivo.</p><p>Cada equipo se entrega con tóner, mantenimiento preventivo, instalación y soporte incluidos. En Tepatitlán contamos con un técnico especializado asignado a la zona, respaldado por nuestras oficinas y almacén en Guadalajara, para ofrecerte atención local con el respaldo de una empresa establecida.</p>",
+      "background": "white"
     },
     {
       "type": "richText",
@@ -25,7 +31,11 @@
       "image": "/images/samsung-4072.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -35,7 +45,11 @@
       "image": "/images/consumibles-2.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -45,7 +59,11 @@
       "image": "/images/consumibles-3.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -55,7 +73,11 @@
       "image": "/images/consumibles-4.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -70,7 +92,11 @@
       "image": "/images/consumibles-6.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -80,7 +106,11 @@
       "image": "/images/brother-8900.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -95,7 +125,11 @@
       "image": "/images/consumibles-7.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -105,7 +139,11 @@
       "image": "/images/ricoh.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -115,7 +153,11 @@
       "image": "/images/consumibles-8.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -125,7 +167,11 @@
       "image": "/images/consumibles-9.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -135,8 +181,45 @@
       "image": "/images/ricoh.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/523787867956", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/523787867956",
+          "style": "primary"
+        }
       ]
+    },
+    {
+      "type": "richText",
+      "heading": "Cobertura y soporte en Tepatitlán, Jalisco",
+      "html": "<p>Atendemos empresas agroindustriales, despachos, comercios, escuelas y consultorios en Tepatitlán y los municipios de Los Altos. Si buscas rentar una multifuncional o comprar tu equipo con servicio incluido, coordinamos la instalación, la capacitación y el suministro de consumibles.</p>",
+      "background": "light"
+    },
+    {
+      "type": "faq",
+      "heading": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Dan servicio de renta y venta de multifuncionales en Tepatitlán?",
+          "a": "Sí. Ofrecemos renta y venta de multifuncionales Samsung, Brother y RICOH en Tepatitlán y su zona, con tóner, mantenimiento y servicio técnico incluidos."
+        },
+        {
+          "q": "¿Tienen técnico en Tepatitlán o viajan desde Guadalajara?",
+          "a": "Contamos con un técnico especializado asignado a la zona de Tepatitlán, respaldado por nuestras oficinas y almacén en Guadalajara. Así la atención es local y con el soporte de una empresa establecida."
+        },
+        {
+          "q": "¿Qué marcas de multifuncionales manejan?",
+          "a": "Trabajamos principalmente equipos Samsung, Brother y RICOH, en blanco y negro y a color, para distintos volúmenes de impresión."
+        },
+        {
+          "q": "¿La renta incluye tóner, mantenimiento y servicio técnico?",
+          "a": "Sí. Nuestros planes de renta incluyen tóner, mantenimiento preventivo, instalación, capacitación y soporte técnico, para que solo te ocupes de imprimir."
+        },
+        {
+          "q": "¿Atienden a empresas agroindustriales y despachos en Tepatitlán?",
+          "a": "Sí. Damos servicio a empresas agroindustriales y despachos y comercios en Tepatitlán y Los Altos de Jalisco. Puedes rentar o comprar tu multifuncional y te asesoramos según tu volumen de impresión."
+        }
+      ],
+      "background": "white"
     }
   ]
 }

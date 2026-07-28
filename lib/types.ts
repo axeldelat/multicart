@@ -103,10 +103,17 @@ export interface StatsBlock {
   items: { value: string; label: string }[];   // value: "147", "2M", "400"...
 }
 
+export interface FaqBlock {
+  type: "faq";
+  heading?: string;
+  items: { q: string; a: string }[];   // a: texto plano; alimenta también el schema FAQPage
+  background?: "navy" | "light" | "white";
+}
+
 export type Block =
   | HeroBlock | ServicesGridBlock | BrandStripBlock | RichTextBlock
   | FeatureListBlock | ImageTextBlock | TestimonialsBlock
-  | VideoGalleryBlock | CTABlock | ContactBlock | StatsBlock;
+  | VideoGalleryBlock | CTABlock | ContactBlock | StatsBlock | FaqBlock;
 
 export interface PageContent {
   seo: SEO;

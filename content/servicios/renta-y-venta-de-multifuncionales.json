@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Renta y Venta de Multifuncionales - Multicart",
-    "description": "Renta y venta de multifuncionales Samsung, Brother y RICOH con servicio técnico y mantenimiento.",
+    "description": "Renta y venta de multifuncionales en Guadalajara y todo México: equipos Samsung, Brother y RICOH con tóner, mantenimiento y servicio técnico incluidos.",
     "canonical": "/servicios/renta-y-venta-de-multifuncionales",
     "ogImage": "/images/samsung-4072.png"
   },
@@ -25,7 +25,11 @@
       "image": "/images/samsung-4072.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -35,7 +39,11 @@
       "image": "/images/consumibles-2.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -45,7 +53,11 @@
       "image": "/images/consumibles-3.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -55,7 +67,11 @@
       "image": "/images/consumibles-4.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -70,7 +86,11 @@
       "image": "/images/consumibles-6.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -80,7 +100,11 @@
       "image": "/images/brother-8900.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -95,7 +119,11 @@
       "image": "/images/consumibles-7.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -105,7 +133,11 @@
       "image": "/images/ricoh.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -115,7 +147,11 @@
       "image": "/images/consumibles-8.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -125,7 +161,11 @@
       "image": "/images/consumibles-9.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -135,7 +175,11 @@
       "image": "/images/ricoh.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090?text=Hola%2C%20soy%20nuevo%20cliente%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n.",
+          "style": "primary"
+        }
       ]
     }
   ]

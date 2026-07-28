@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Renta y Venta de Multifuncionales Mazatlán - Multicart",
-    "description": "Renta y venta de multifuncionales Samsung, Brother y RICOH con servicio técnico y mantenimiento.",
+    "description": "Renta y venta de multifuncionales en Mazatlán, Sinaloa: equipos Samsung, Brother y RICOH con tóner, mantenimiento y técnico especializado en la zona.",
     "canonical": "/servicios/renta-y-venta-de-multifuncionales-mazatlan",
     "ogImage": "/images/samsung-4072.png"
   },
@@ -10,8 +10,14 @@
       "type": "hero",
       "eyebrow": "Renta y venta · MAZATLÁN, SINALOA.",
       "title": "Multifuncionales",
-      "subtitle": "Contamos con una gran gama de impresoras, copiadoras y multifuncionales de las mejores marcas, en renta y venta.",
+      "subtitle": "Renta y venta de impresoras y multifuncionales para empresas de Mazatlán, con técnico especializado asignado a la zona y el respaldo de nuestras oficinas en Guadalajara.",
       "background": "light"
+    },
+    {
+      "type": "richText",
+      "heading": "Renta y venta de multifuncionales en Mazatlán",
+      "html": "<p>Mazatlán combina puerto, turismo y un comercio local muy activo: hoteles, restaurantes, despachos, inmobiliarias y empresas de servicios que necesitan imprimir, escanear y copiar sin interrupciones. En Multicart ofrecemos multifuncionales Samsung, Brother y RICOH en renta y venta, listas para ese entorno.</p><p>Cada equipo llega con tóner, mantenimiento preventivo, instalación y soporte incluidos. En Mazatlán contamos con un técnico especializado asignado a la zona, respaldado por nuestras oficinas y almacén en Guadalajara, para darte atención cercana con la solidez de una empresa establecida.</p>",
+      "background": "white"
     },
     {
       "type": "richText",
@@ -25,7 +31,11 @@
       "image": "/images/samsung-4072.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -35,7 +45,11 @@
       "image": "/images/consumibles-2.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -45,7 +59,11 @@
       "image": "/images/consumibles-3.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -55,7 +73,11 @@
       "image": "/images/consumibles-4.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -70,7 +92,11 @@
       "image": "/images/consumibles-6.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -80,7 +106,11 @@
       "image": "/images/brother-8900.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -95,7 +125,11 @@
       "image": "/images/consumibles-7.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -105,7 +139,11 @@
       "image": "/images/ricoh.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -115,7 +153,11 @@
       "image": "/images/consumibles-8.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -125,7 +167,11 @@
       "image": "/images/consumibles-9.png",
       "imageSide": "left",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
     },
     {
@@ -135,8 +181,45 @@
       "image": "/images/ricoh.png",
       "imageSide": "right",
       "buttons": [
-        { "label": "Más Información", "href": "https://wa.me/5213321910090", "style": "primary" }
+        {
+          "label": "Más Información",
+          "href": "https://wa.me/5213321910090",
+          "style": "primary"
+        }
       ]
+    },
+    {
+      "type": "richText",
+      "heading": "Cobertura y soporte en Mazatlán, Sinaloa",
+      "html": "<p>Damos servicio a hoteles, restaurantes, despachos, escuelas y comercios en Mazatlán y su zona urbana. Ya sea que quieras rentar una multifuncional o comprar tu equipo con servicio incluido, coordinamos la instalación, la capacitación y el suministro de consumibles para mantener tu operación en marcha.</p>",
+      "background": "light"
+    },
+    {
+      "type": "faq",
+      "heading": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Dan servicio de renta y venta de multifuncionales en Mazatlán?",
+          "a": "Sí. Ofrecemos renta y venta de multifuncionales Samsung, Brother y RICOH en Mazatlán y su zona, con tóner, mantenimiento y servicio técnico incluidos."
+        },
+        {
+          "q": "¿Tienen técnico en Mazatlán o viajan desde Guadalajara?",
+          "a": "Contamos con un técnico especializado asignado a la zona de Mazatlán, respaldado por nuestras oficinas y almacén en Guadalajara. Así la atención es local y con el soporte de una empresa establecida."
+        },
+        {
+          "q": "¿Qué marcas de multifuncionales manejan?",
+          "a": "Trabajamos principalmente equipos Samsung, Brother y RICOH, en blanco y negro y a color, para distintos volúmenes de impresión."
+        },
+        {
+          "q": "¿La renta incluye tóner, mantenimiento y servicio técnico?",
+          "a": "Sí. Nuestros planes de renta incluyen tóner, mantenimiento preventivo, instalación, capacitación y soporte técnico, para que solo te ocupes de imprimir."
+        },
+        {
+          "q": "¿Atienden a hoteles, restaurantes y despachos en Mazatlán?",
+          "a": "Sí. Damos servicio a hoteles, restaurantes y despachos y comercios en Mazatlán y su zona urbana. Puedes rentar o comprar tu multifuncional y te asesoramos según tu volumen de impresión."
+        }
+      ],
+      "background": "white"
     }
   ]
 }

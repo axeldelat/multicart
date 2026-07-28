@@ -1,6 +1,8 @@
 import { getPage, getSite } from "@/lib/content";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, buildServiceSchema, buildFaqSchema } from "@/lib/seo";
+import { getCityPage } from "@/lib/cities";
 import SectionRenderer from "@/components/SectionRenderer";
+import type { FaqBlock } from "@/lib/types";
 
 const SLUGS = [
   "renta-y-venta-de-multifuncionales",
@@ -26,6 +28,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServicioPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { sections } = await getPage(`servicios/${slug}`);
-  return <SectionRenderer sections={sections} site={getSite()} />;
+  const { seo, sections } = await getPage(`servicios/${slug}`);
+
+  const city = getCityPage(slug);
+  const faq = sections.find((s): s is FaqBlock => s.type === "faq");
+  const schemas = [
+    city ? buildServiceSchema(city, seo) : null,
+    faq && faq.items.length ? buildFaqSchema(faq.items) : null,
+  ].filter(Boolean);
+
+  return (
+    <>
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <SectionRenderer sections={sections} site={getSite()} />
+    </>
+  );
 }
