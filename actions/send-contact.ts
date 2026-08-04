@@ -1,5 +1,9 @@
 "use server";
 import { sendTransactional } from "@/lib/plunk";
+import { verifyRecaptcha } from "@/lib/recaptcha";
+// Un módulo "use server" solo puede exportar funciones async, por eso el nombre
+// de la acción vive en lib/ y se comparte con el formulario.
+import { CONTACT_RECAPTCHA_ACTION } from "@/lib/recaptcha-client";
 
 export type ContactState = { ok: boolean; error?: string };
 
@@ -20,6 +24,18 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
   if (formData.get("company")) return { ok: true }; // honeypot
   if (!name || !email || !message) return { ok: false, error: "Faltan campos obligatorios." };
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "Correo inválido." };
+
+  const verdict = await verifyRecaptcha(
+    String(formData.get("recaptchaToken") ?? ""),
+    CONTACT_RECAPTCHA_ACTION,
+  );
+  if (!verdict.ok) {
+    console.warn(`[contacto] reCAPTCHA rechazó el envío: ${verdict.reason}`);
+    return {
+      ok: false,
+      error: "No pudimos verificar el envío. Recarga la página o escríbenos por WhatsApp.",
+    };
+  }
 
   // Destino según entorno: producción -> reportes@multicart.mx;
   // pruebas (local / preview de Vercel) -> correo del dueño para no llenar reportes.

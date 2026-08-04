@@ -63,7 +63,9 @@ export default function ContactBlock({
         </div>
         {showForm ? (
           <div>
-            <ContactForm />
+            {/* RECAPTCHA_KEY no lleva prefijo NEXT_PUBLIC_, así que la site key
+                se lee aquí (server component) y baja al form como prop. */}
+            <ContactForm recaptchaSiteKey={process.env.RECAPTCHA_KEY} />
           </div>
         ) : null}
       </div>

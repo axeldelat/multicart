@@ -67,3 +67,10 @@ p {
     }
   }
 }
+
+/* Badge flotante de reCAPTCHA v3: se oculta porque cae justo encima del botón
+   de WhatsApp (fixed bottom-5 right-5). Google lo permite si el aviso legal
+   aparece en el formulario — está en components/ContactForm.tsx. */
+.grecaptcha-badge {
+  visibility: hidden;
+}
