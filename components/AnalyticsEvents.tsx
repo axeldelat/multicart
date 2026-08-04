@@ -33,10 +33,8 @@ export default function AnalyticsEvents() {
       if (!anchor) return;
       const href = anchor.getAttribute("href") ?? "";
       if (WHATSAPP_RE.test(href)) {
-        // Evento recomendado GA4 para captación de lead (total unificado con el formulario).
-        trackEvent("generate_lead", { method: "whatsapp", link_url: href });
-        // Evento propio, para ver los contactos por WhatsApp como métrica independiente.
-        trackEvent("whatsapp_contact", { link_url: href });
+        // Solo evento propio: generate_lead queda reservado al envío del formulario.
+        trackEvent("whatsapp_contact", { method: "whatsapp", link_url: href });
       }
     };
     // capture: se dispara antes de la navegación; gtag usa sendBeacon, no se pierde.
